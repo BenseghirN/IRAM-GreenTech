@@ -32,7 +32,7 @@ def create_new_csv():
     now = datetime.now().strftime("%Y%m%d%H%M%S")
     filename = f"E{now}.csv"
     filepath = f"/data/records/{filename}"
-    csv_file = "/data/records/donnees_dht.csv"
+    # csv_file = "/data/records/donnees_dht.csv"
     # Crée le fichier et écrit l'en-tête
     with open(filepath, mode="w", newline="") as file:
         writer = csv.writer(file)
@@ -147,7 +147,7 @@ try:
         except Exception as e:
             print(f"[ Erreur] {e}")
 
-        time.sleep(15)
+        time.sleep(2)
 
 
 except KeyboardInterrupt:
